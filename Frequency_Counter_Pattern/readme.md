@@ -1,4 +1,8 @@
-## Frequency Counter Pattern
+# Frequency Counter Pattern
+
+The frequency counter pattern uses objects or sets to collect values or frequencies of values. This can often avoid the need for nested loops or `O(n^2)` operations with arrays and strings.
+
+## Example problem: same frequency of digits
 
 Write a function that accepts two arrays, `arr1` and `arr2`. The function should return `true` if every value in `arr1` has its corresponding value squared in `arr2`. The frequency of values must be the same.
 
@@ -29,7 +33,7 @@ function same(arr1, arr2) {
 }
 ```
 
-### Anagram Checker
+## Anagram Checker
 
 Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as "cinema" formed from "iceman".
 
