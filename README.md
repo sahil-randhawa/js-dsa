@@ -1,6 +1,6 @@
 # js-dsa
 
-JS DSA
+JS DSA : A collection of Data Structures and Algorithms implemented in JavaScript.
 
 - [Frequency Counter Pattern](./Frequency_Counter_Pattern/readme.md#frequency-counter-pattern)
 
