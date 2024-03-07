@@ -15,4 +15,4 @@ JS DSA : A collection of Data Structures and Algorithms implemented in JavaScrip
 
   - [Max Subarray Sum](./Sliding_Window_Pattern/readme.md#max-subarray-sum)
   - [Min Subarray Length](./Sliding_Window_Pattern/readme.md#min-subarray-length)
-  - [Find Longest Substring](./Sliding_Window_Pattern/readme.md#find-longest-substring)
+  - [Find Length of Longest Substring](./Sliding_Window_Pattern/readme.md#find-length-of-longest-substring-without-repeating-characters)

@@ -62,3 +62,35 @@ function maxSubarraySum(arr, num) {
     return maxSum;
 }
 ```
+
+## Find Length of Longest Substring Without Repeating Characters
+
+Given a string s, find the length of the longest substring without repeating characters.
+
+Time Complexity: `O(n)`
+Space Complexity: `O(n)`
+
+```
+var lengthOfLongestSubstring = function (s) {
+
+    if (s.length < 2) return s.length;
+
+    let start = 0;
+    let end = 0;
+    let longest = 0;
+    const unique = new Set();
+
+    while (end < s.length) {
+        if (!unique.has(s[end])) {
+            unique.add(s[end]);
+            end++;
+            longest = Math.max(longest, unique.size);
+        } else {
+            unique.delete(s[start])
+            start++;
+        }
+    }
+    return longest;
+
+};
+```
