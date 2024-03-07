@@ -2,7 +2,7 @@
 
 The sliding window pattern is a pattern that uses a window to solve problems. It is very useful for solving problems with minimal space complexity.
 
-### Max Subarray Sum
+## Max Subarray Sum
 
 Given an array of integers and a number, write a function called `maxSubarraySum` which finds the maximum sum of a subarray with the length of the number passed to the function.
 
