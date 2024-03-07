@@ -15,7 +15,9 @@
 // maxSubarraySum([3, -2, 7, -4, 1, -1, 4, -2, 1], 2) // 5
 // maxSubarraySum([2, 3], 3) // null
 
-// Naive Solution: Time Complexity - O(N^2)
+// Naive Solution: 
+// Time Complexity - O(N^2)
+// Space Complexity - O(1)
 
 function maxSubarraySumN(arr, num) {
     if (arr.length < num) return null;
@@ -33,7 +35,9 @@ function maxSubarraySumN(arr, num) {
     return maxSum;
 }
 
-// Refactored Solution: Time Complexity - O(N)
+// Refactored Solution: 
+// Time Complexity - O(N)
+// Space Complexity - O(1)
 
 function maxSubarraySum(arr, num) {
     if (arr.length < num) return null;
