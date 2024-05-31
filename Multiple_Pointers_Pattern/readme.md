@@ -154,3 +154,48 @@ var fourSum = function (nums, target) {
     return sol
 };
 ```
+
+
+#### Approach to Solving the 4Sum Problem
+
+1. Sort the Array:
+    - Start by sorting the array nums in ascending order. This helps in efficiently using the two-pointer technique and avoiding duplicates.
+
+2. Initialize the Result Array:
+    - Create an empty array sol to store the unique quadruplets that sum up to the target value.
+
+3. Nested Loops for Quadruplet Elements:
+    - Use four nested loops to find the quadruplets:
+        - The outermost loop iterates through the array to select the first element nums[i].
+        - The second loop iterates through the array to select the second element nums[j].
+        - The innermost loop uses a two-pointer technique to find the remaining two elements nums[l] and nums[k].
+
+4. Skip Duplicates:
+    - Inside the outer and second loops, skip duplicates by checking if the current element is the same as the previous element. This helps in avoiding duplicate quadruplets in the result.
+
+5. Two-pointer Technique:
+    - For the third and fourth elements, use two pointers:
+        - l starts just after j and k starts at the end of the array.
+        - Calculate the sum of the four elements: nums[i] + nums[j] + nums[l] + nums[k].
+        - If the sum matches the target, add the quadruplet to the result array and move both pointers (l++ and k--) while skipping duplicates.
+        - If the sum is less than the target, move the left pointer l to the right to increase the sum.
+        - If the sum is greater than the target, move the right pointer k to the left to decrease the sum.
+
+6. Return the Result:
+    - After all iterations, return the result array sol containing all the unique quadruplets that sum up to the target.
+
+**Pseudocode**
+
+1. Sort nums.
+2. Initialize sol as an empty array.
+3. Loop i from 0 to nums.length - 3:
+    - Skip duplicates for i.
+    - Loop j from i + 1 to nums.length - 2:
+        - Skip duplicates for j.
+        - Initialize l to j + 1 and k to nums.length - 1.
+        - While l < k:
+            - Calculate the sum of nums[i] + nums[j] + nums[l] + nums[k].
+            - If the sum equals the target, add the quadruplet to sol, move l++, k--, and skip duplicates.
+            - If the sum is less than the target, move l++.
+            - If the sum is greater than the target, move k--.
+4. Return sol.
