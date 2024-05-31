@@ -10,6 +10,7 @@ JS DSA : A collection of Data Structures and Algorithms implemented in JavaScrip
 
   - [Sum Zero](./Multiple_Pointers_Pattern/readme.md#sumzero)
   - [Count Unique Values](./Multiple_Pointers_Pattern/readme.md#count-unique-values)
+  - [4sum](./Multiple_Pointers_Pattern/readme.md#4sum)
 
 - [Sliding Window Pattern](./Sliding_Window_Pattern/readme.md#sliding-window-pattern)
 
